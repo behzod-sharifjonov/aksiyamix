@@ -85,7 +85,44 @@ function DetailShop() {
         </div>
 
         <div className="detail-right-bottom">
-            <h1>coming soon </h1>
+           
+<div className='detail-right-bottom-card'>
+    <h1>
+    Скидочные товары
+    </h1>
+<div className="dot-mini"></div>
+    <h2>
+
+    149/200 шт.
+    </h2>
+
+</div>
+<div className='detail-right-bottom-card'>
+    <h1>
+    Доставка
+    </h1>
+<div className="dot-mini"></div>
+    <h2>
+
+    Нет
+    </h2>
+
+</div>
+<div className='detail-right-bottom-card'>
+    <h1>
+    Рассрочка
+    </h1>
+    <div className="dot-mini"></div>
+
+    <h2 className='green-color'>
+
+    Есть
+    </h2>
+
+</div>
+
+
+
         </div>
 </div>
         

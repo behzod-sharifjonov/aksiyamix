@@ -9,6 +9,7 @@ import silver from '../../assets/images/iphone15silver.png'
 
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { GoChevronLeft } from "react-icons/go";
+import DetailComment from './detailcomment/DetailComment'
 
 
 function Detail() {
@@ -83,7 +84,7 @@ function Detail() {
         </div>
       </div>
 
-
+<DetailComment/>
     </div>
   )
 }
