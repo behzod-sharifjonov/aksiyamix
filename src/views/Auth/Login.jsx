@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Login.css'; // Assuming you have some styles for the modal
 
 function Modal({ isOpen, onClose, children }) {
   if (!isOpen) return null;
