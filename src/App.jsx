@@ -5,6 +5,9 @@ import { createContext, useState } from "react";
 import MobileCategoryPage from "./container/Categories/MobileCategoryPage";
 import Header from "./components/Header/Header";
 import HeaderMenuMobile from "./components/Header/HeaderMenuMobile";
+import Login from "../src/views/Auth/Login"
+import AuthModal from "./views/Auth/AuthModal";
+import NotFound from "./components/404/NotFound";
 
 export const Context = createContext()
 
@@ -22,6 +25,8 @@ function App() {
     <Context.Provider value={{ language, setLanguage, showModal, setShowModal, closeModal, openModal }}>
       <Header />
       <HeaderMenuMobile />
+      <Login />
+      <AuthModal />
       <Routes>
         <Route path="detail" element={<Detail />} />
 
@@ -36,6 +41,8 @@ function App() {
         <Route path="/favorites" element={<h1>Остановленные объявления</h1>} />
         <Route path="/profile" element={<h1>Остановленныеee объявления</h1>} />
         <Route path="/menu" element={<h1>Остановленныеcc объявления</h1>} />
+
+        <Route path="*" element={<NotFound/>} />
       </Routes>
     </Context.Provider>
   )

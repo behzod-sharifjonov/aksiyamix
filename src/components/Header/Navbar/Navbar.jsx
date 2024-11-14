@@ -6,10 +6,11 @@ import { IoSearchOutline } from "react-icons/io5";
 import { IoNotificationsOutline } from "react-icons/io5";
 import { GoHeart } from "react-icons/go";
 import { Context } from '../../../App';
+import AuthModal from '../../../views/Auth/AuthModal';
 
 function Navbar() {
 
-    const { openModal } = useContext(Context);
+    const { openModal, showModal, closeModal } = useContext(Context);
 
     return (
         <nav className='container'>
@@ -47,6 +48,7 @@ function Navbar() {
                 </li>
                 <li className='login-btn'>
                     <button onClick={openModal}>Login</button>
+                    <AuthModal showModal={showModal} closeModal={closeModal} />
                 </li>
             </ul>
             <div className="search search-mobile">
