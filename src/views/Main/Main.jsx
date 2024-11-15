@@ -16,6 +16,7 @@ function Main() {
                 <div className="">
                     <Card />
                 </div>
+                <Banner />
             </main>
         </div>
     )
