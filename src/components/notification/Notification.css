@@ -1,0 +1,63 @@
+.nav-icon-notification {
+    position: relative;
+    font-size: 23px;
+  }
+  
+  .hover-modal {
+    display: none;
+    position: absolute;
+    top: 110px;
+    bottom: 290px;
+    left: 65%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 340px;
+    max-height: 500px;
+    z-index: 999;
+    overflow-y: auto;
+  }
+  
+
+  .hover-modal.show {
+    display: block;
+    
+  }
+  
+  .hover-modal .MuiList-root {
+    display: flex;
+    flex-direction: column;
+  }
+  .error{
+     align-items: center;
+     text-align: center;
+     padding-top: 20%;
+  }
+  .error p{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    color: rgba(15, 23, 42, 1)   ;
+  }
+  .MuiBox-root .h2-title{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    color: rgba(15, 23, 42, 1);
+  }
+  span.MuiTypography-root {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: rgba(15, 23, 42, 1);
+    margin-right: 12px;
+  }
+  .notification:hover{
+   background: rgba(12, 164, 250, 0.1);
+   padding: 10px;
+   border-radius: 8px;
+   color: rgba(12, 164, 250, 1);
+   transition: .2s;
+  }

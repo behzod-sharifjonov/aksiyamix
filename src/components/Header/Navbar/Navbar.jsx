@@ -4,9 +4,12 @@ import logo from '../../../assets/logo.png'
 import { IoMenu } from "react-icons/io5";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoNotificationsOutline } from "react-icons/io5";
+// import Notification from "../../Notification/Notification";
+
 import { GoHeart } from "react-icons/go";
 import { Context } from '../../../App';
 import AuthModal from '../../../views/Auth/AuthModal';
+import Notification from '../../notification/Notification';
 
 function Navbar() {
 
@@ -38,7 +41,7 @@ function Navbar() {
                 </li>
                 <li>
                     <div className="notification">
-                        <IoNotificationsOutline className='nav-icon-notificaition nav-icon' />
+                       <Notification></Notification>
                     </div>
                 </li>
                 <li>
