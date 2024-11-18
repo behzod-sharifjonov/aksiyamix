@@ -8,6 +8,7 @@ import HeaderMenuMobile from "./components/Header/HeaderMenuMobile";
 import Login from "../src/views/Auth/Login"
 import AuthModal from "./views/Auth/AuthModal";
 import NotFound from "./components/404/NotFound";
+import Catalog from "./components/Category/Category";
 
 export const Context = createContext()
 

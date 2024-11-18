@@ -6,6 +6,7 @@ import '../../i18n'
 import uzb_flag from '../../assets/language/uzbekistan (1).png'
 import rus_flag from '../../assets/language/russia.png'
 import HeaderMenu from './HeaderBottom';
+import Catalog from '../Category/Category';
 
 function Header() {
 
@@ -62,6 +63,7 @@ function Header() {
                 </div>
             </div>
             <Navbar />
+            <Catalog />
             <div className="header-bottom">
                 <HeaderMenu />
             </div>
