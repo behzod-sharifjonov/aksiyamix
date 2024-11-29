@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import Otziv from './Otziv'
+import TovarData from './TovarData'
 import Xarakteristika from './Xarakteristika'
+import Otziv from './Otziv'
+import DetailMap from '../DetailMap'
 
 
 
@@ -88,15 +90,17 @@ function DetailComment() {
             {
                 data && data.map(item =>
                     item.id === 0 ?
-                        <Otziv key={item.id}/>
+                        <TovarData key={item.id} />
                         :
                         item.id === 1
-                         ?
-                            <Xarakteristika key={item.id}/>
+                            ?
+                            <Xarakteristika key={item.id} />
                             :
-                            <h1 key={item.id}>3</h1>
+                            <Otziv key={item.id} />
                 )
             }
+
+
         </div>
     )
 }

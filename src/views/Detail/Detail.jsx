@@ -10,6 +10,9 @@ import silver from '../../assets/images/iphone15silver.png'
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { GoChevronLeft } from "react-icons/go";
 import DetailComment from './detailcomment/DetailComment'
+import Otziv from './detailcomment/Otziv'
+import DetailMap from './DetailMap'
+import DetailBox from './DetailBox'
 
 
 function Detail() {
@@ -84,7 +87,23 @@ function Detail() {
         </div>
       </div>
 
+<div className="flex">
+
 <DetailComment/>
+<DetailMap/>
+
+
+</div>
+
+
+
+<div className="flex">
+
+
+<DetailBox/>
+
+
+</div>
     </div>
   )
 }

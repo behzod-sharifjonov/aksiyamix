@@ -255,38 +255,38 @@ function DetailTop({ displayHandler }) {
           </div>
 
 
-<div className="detail-top-data-like">
+          <div className="detail-top-data-like">
 
 
-<div className="like-left">
+            <div className="like-left">
 
 
-<div className="like-dislike">
+              <div className="like-dislike">
 
-    <div className='like-count'>
+                <div className='like-count'>
 
-<img src={up} alt="" />
+                  <img src={up} alt="" />
 
-<h1>1 200</h1>
+                  <h1>1 200</h1>
 
-    </div>
+                </div>
 
-<img src={down} alt="" />
-</div>
+                <img src={down} alt="" />
+              </div>
 
-</div>
+            </div>
 
-<div className="like-left">
+            <div className="like-left">
 
-<HiOutlineExclamationCircle className='exclamation' />
-<h1 className='complaint'>
-Жалоба
-</h1>
+              <HiOutlineExclamationCircle className='exclamation' />
+              <h1 className='complaint'>
+                Жалоба
+              </h1>
 
-</div>
+            </div>
 
 
-</div>
+          </div>
 
 
 
@@ -295,7 +295,7 @@ function DetailTop({ displayHandler }) {
 
         </div>
       </div>
-<DetailShop/>
+      <DetailShop />
 
 
     </div>

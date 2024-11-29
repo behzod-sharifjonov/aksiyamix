@@ -563,14 +563,16 @@ h2 {
 .commit-conteiner {
   width: 708px;
   /* height: 456px; */
-  padding: 10px;
+  padding: 20px;
+
   border: 1px solid grey;
   border-radius: 8px;
 }
+
 .commit-conteiner-xarakteristika {
   width: 708px;
   /* height: 456px; */
-  padding: 10px;
+  padding: 30px;
   border: 1px solid grey;
   border-radius: 8px;
   display: flex;
@@ -612,6 +614,7 @@ h2 {
   justify-content: center;
   gap: 5px;
 }
+
 .commit-btn-white {
   width: 230px;
   height: 56px;
@@ -632,18 +635,22 @@ h2 {
   color: red;
 }
 
-.xarakteristika-data{
+.xarakteristika-data {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
 }
-.dot{
+
+.dot {
   border-bottom: 1px dashed grey;
   height: 1px;
-  width: 100%;
+  width: 80%;
   margin-bottom: -16px;
 }
-.dot-mini{
+
+.dot-mini {
   border-bottom: 1px dashed grey;
   height: 1px;
   width: 100%;
@@ -651,16 +658,200 @@ h2 {
   margin-left: 1px;
 
 }
-.xarakteristika-data> h1{
+
+.xarakteristika-data>h1 {
   font-size: 16px;
   font-weight: 500;
-   /* Colors/Black 50-950/600
-    */
-color: rgba(71, 85, 105, 1);
+  color: rgba(71, 85, 105, 1);
 
-  }
-  .xarakteristika-data> h2{
-    font-size: 18px;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 1);
-  }
+}
+
+.xarakteristika-data>h2 {
+  font-size: 18px;
+  font-weight: 600;
+  /* width: 150px; */
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  text-align: end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+
+}
+
+.commit-conteiner-otziv {
+  width: 708px;
+  height: 455px;
+  padding: 16px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.otziv-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.otziv-data>img {
+  width: 113px;
+  height: 104px;
+}
+
+.otziv-data>h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.otziv-data>button {
+  width: 176px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(255, 3, 76, 1);
+  color: white;
+}
+.map{
+  width: 600px;
+  height: 455px;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+.detail-map{
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  padding-top: 30px;
+}
+.detail-box-conteiner{
+  width: 708px;
+  /* height: 920px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 16px;
+border: 1px solid grey;
+padding: 30px;
+}
+.detail-box-card{
+
+  display: flex;
+  align-items: center;
+  height: 100px;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 16px;
+  /* border: 1px solid grey; */
+  background-color:  var(--Colors-Black-50-950-50, rgba(248, 250, 252, 1));
+}
+.detail-box-card-left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.detail-box-card-left > img{
+  width: 66px;
+  height: 68px;
+  border-radius: 4px;
+}
+.detailBox-Price{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.detailBox-Price>h1 {
+  color: rgba(12, 164, 250, 1);
+  font-size: 18px;
+  font-weight: 600;
+}
+.detailBox-Price > h2{
+  font-size: 18px;
+  font-weight: 800;
+}
+
+
+.detailBox-digrate{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 145px;
+
+}
+.detailBox-digrate>a {
+  background: linear-gradient(249.36deg, #F50951 3.2%, #FD3A7E 44.56%, #FF9B06 100%);
+  width: 32px;
+  height: 20px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detailBox-digrate>h1 {
+  font-size: 14px;
+  color:rgba(148, 163, 184, 1);
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+.detail-box-card-right{
+  display: flex;
+  gap: 10px;
+}
+
+.Olcha-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 20px; */
+}
+.star-box >h1{
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(148, 163, 184, 1);
+}
+.Olcha-text > h2{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.detail-box-card-right >img{
+  width: 48px;
+  height: 48px;
+}
+.star-box{
+  display: flex;
+  align-items: center;
+}
+
+.star-detail-box{
+  width: 19px;
+  height: 18px;
+  border: 1.5px;
+  color: red;
+}
+.detail-box{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+
+button{
+  cursor: pointer;
+}
