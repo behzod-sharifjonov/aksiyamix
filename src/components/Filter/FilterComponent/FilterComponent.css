@@ -5,9 +5,9 @@
 	border-radius: 12px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	font-family: 'Arial', sans-serif;
-  }
-  
-  .reset-button {
+}
+
+.reset-button {
 	display: block;
 	width: 100%;
 	padding: 12px 85px;
@@ -22,42 +22,112 @@
 	font-weight: bold;
 	transition: background-color 0.3s ease;
 	text-wrap: nowrap;
-  }
-  
-  .reset-button:hover {
+}
+
+.reset-button:hover {
 	background-color: #e6356f;
 	color: white
-  }
-  
-  .filter-section {
-	margin-bottom: 20px;
-  }
-  
-  .filter-section-title {
+}
+
+.filter-section {
+	margin-bottom: 16px;
+	padding-bottom: 16px;
+	border-bottom: 1px #D9DBE8 solid;
+}
+
+.filter-section-title {
 	font-size: 16px;
 	font-weight: bold;
 	color: #333;
 	margin-bottom: 15px;
-  }
-  
-  .chevron {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	button {
+		border: 0px;
+		outline: 0px;
+		background-color: transparent;
+		cursor: pointer;
+		/* padding: 24px; */
+	}
+}
+
+.fitered-inventor {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
+	input {
+		width: 100%;
+		height: 48px;
+		padding-left: 16px;
+		border: #D9DBE8 1px solid;
+		border-radius: 8px;
+	}
+
+	input::placeholder {
+		color: #E2E8F0;
+		font-size: 16px;
+	}
+
+
+}
+
+.chevron {
 	float: right;
 	font-size: 16px;
 	color: #999;
 	transition: transform 0.3s ease;
-  }
-  
-  .chevron.open {
+}
+
+.filtered-list-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+
+	div {
+		display: flex;
+		background-color: #F1F5F9;
+		padding: 4px 12px;
+		font-size: 14px;
+		gap: 8px;
+		align-items: center;
+		border-radius: 4px;
+		color: #0F172A;
+		cursor: pointer;
+
+		span {
+			color: gray;
+		}
+	}
+}
+
+.chevron.open {
 	transform: rotate(180deg);
-  }
-  
-  .filter-list {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-  }
-  
-  .filter-label {
+}
+
+.show-all {
+	margin: auto;
+	position: relative;
+	top: 16px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 0px;
+	background-color: transparent;
+	color: #FF034C;
+	margin-bottom: 16px;
+	span {
+		border: 1px solid #D9DBE8;
+		border-radius: 50%;
+		padding: 1px 4px;
+
+	}
+}
+
+
+.filter-label {
 	display: flex;
 	align-items: center;
 	cursor: pointer;
@@ -65,13 +135,13 @@
 	margin-bottom: 10px;
 	border-radius: 8px;
 	transition: background-color 0.2s ease;
-  }
-  
-  .filter-label:hover {
+}
+
+.filter-label:hover {
 	background-color: #f0f0f0;
-  }
-  
-  .filter-label input {
+}
+
+.filter-label input {
 	margin-right: 10px;
 	border: 0;
 	color: black;
@@ -80,78 +150,75 @@
 	text-align: center;
 	width: 100%;
 	height: 18px;
-  }
-  
-  .filter-label-text {
+}
+
+.filter-label-text {
 	font-size: 14px;
 	color: #333;
-  }
-  
-  .price-slider {
+}
+
+.price-slider {
 	margin-top: 15px;
-  }
-  
-  .price-inputs {
+}
+
+.price-inputs {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 15px;
-  }
-  
-  .price-inputs input {
+}
+
+.price-inputs input {
 	width: 45%;
 	padding: 8px;
 	font-size: 14px;
 	border: 1px solid #ddd;
 	border-radius: 6px;
 	background-color: #fff;
-  }
-  
-  .slider {
+}
+
+.slider {
 	width: 100%;
 	appearance: none;
 	height: 6px;
 	background: #f0f0f0;
 	border-radius: 5px;
 	outline: none;
-  }
-  
-  .slider::-webkit-slider-thumb {
+}
+
+.slider::-webkit-slider-thumb {
 	appearance: none;
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
 	background: #ff4081;
 	cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
+}
+
+.slider::-moz-range-thumb {
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
 	background: #ff4081;
 	cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
-	.filter-container {
-	  width: 100%;
-	  padding: 15px;
-	}
-  
-	.reset-button {
-	  padding: 10px;
-	  font-size: 12px;
-	}
-  
-	.filter-section-title {
-	  font-size: 14px;
-	}
-  
-	.filter-label-text {
-	  font-size: 12px;
-	}
-  }
-  
+}
 
-  
+@media (max-width: 768px) {
+	.filter-container {
+		width: 100%;
+		padding: 15px;
+	}
+
+	.reset-button {
+		padding: 10px;
+		font-size: 12px;
+	}
+
+	.filter-section-title {
+		font-size: 14px;
+	}
+
+	.filter-label-text {
+		font-size: 12px;
+	}
+}
