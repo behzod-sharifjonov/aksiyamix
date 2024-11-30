@@ -1,0 +1,6 @@
+.box{
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	gap: 30px;
+}

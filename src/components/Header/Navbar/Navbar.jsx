@@ -10,7 +10,7 @@ import AuthModal from '../../../views/Auth/AuthModal';
 
 function Navbar() {
 
-    const { openModal, showModal, closeModal } = useContext(Context);
+    const { openModal, showModal, userName, closeModal } = useContext(Context);
 
     return (
         <nav className='container'>
@@ -47,7 +47,7 @@ function Navbar() {
                     </div>
                 </li>
                 <li className='login-btn'>
-                    <button onClick={openModal}>Login</button>
+                    <button onClick={openModal} style={{cursor: 'pointer'}}>Login</button>
                     <AuthModal showModal={showModal} closeModal={closeModal} />
                 </li>
             </ul>

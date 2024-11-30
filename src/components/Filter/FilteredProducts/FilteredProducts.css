@@ -1,0 +1,106 @@
+.filtered-products {
+	width: 100%;
+	font-family: Arial, sans-serif;
+	background-color: #fff;
+}
+
+.filter-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+	border-radius: 8px;
+}
+
+.date-picker {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	border: 1px solid #D9DBE8;
+	border-radius: 8px;
+	padding: 12px 16px;
+}
+
+.date-picker input {
+	padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+	width: 140px;
+	box-shadow: none;
+}
+
+.date-picker .calendar-icon {
+	color: #555;
+	font-size: 18px;
+}
+
+.view-buttons {
+	display: flex;
+	gap: 8px;
+}
+
+.view-btn {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	padding: 8px 12px;
+	font-size: 14px;
+	color: #333;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: #fff;
+	transition: all 0.3s ease;
+}
+
+.view-btn.active {
+	border-color: #ff5a5a;
+	color: #ff5a5a;
+	background: rgba(255, 90, 90, 0.1);
+}
+
+.view-btn .icon {
+	font-size: 18px;
+}
+
+.view-btn:hover {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.filter-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 16px;
+}
+
+.filter-btn {
+	padding: 4px 12px;
+	background: #F1F5F9;
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	color: #333;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+	background: #e9ecef;
+}
+
+.ct-btns {
+	display: flex;
+	border: 2px solid linear-gradient(249.36deg, #F50951 3.2%, #FD3A7E 44.56%, #FF9B06 100%);
+	gap: 10px;
+}
+
+.Paginations {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 24px;
+	margin-bottom: 16px;
+	padding: 8px;
+	border-radius: 8px;
+}

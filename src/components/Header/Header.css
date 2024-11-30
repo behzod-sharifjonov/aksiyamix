@@ -126,7 +126,7 @@ nav ul li {
 .login-btn button {
     background-color: rgba(12, 164, 250, 1);
     height: 48px;
-    width: 112px;
+    width: 100%;
     border-radius: 8px;
     border: none;
     color: white;

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import Banner from '../../container/Banner/BannerHeader/Banner';
 import './Main.css'
 import Card from '../../components/Cards/Card';
+import Filter from '../../components/Filter/Filter';
 
 function Main() {
     const { t } = useTranslation()
@@ -16,6 +17,7 @@ function Main() {
                 <div className="">
                     <Card />
                 </div>
+                <Filter/>
             </main>
         </div>
     )
