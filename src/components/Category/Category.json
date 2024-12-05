@@ -1,0 +1,106 @@
+{
+  "id": 1,
+  "name": "Elektronika",
+  "subcategories": [
+    {
+      "name": "Smartfonlar va telefonlar",
+      "items": [
+        "Smartfonlar",
+        "Aksessuarlar va ehtiyot qismlari",
+        "Tugmali telefonlar",
+        "Telefonlar uchun g'iloflar",
+        "Telefon ehtiyot qismlari"
+      ]
+    },
+    {
+      "name": "Quloqchinlar va audio texnikalar",
+      "items": [
+        "Quloqchinlar",
+        "Audio texnika",
+        "Proigrivatel uchun aksessuarlar",
+        "Periferiya va boshqa aksessuarlar"
+      ]
+    },
+    {
+      "name": "Foto va video texnika",
+      "items": [
+        "Fotosuratchilar uchun uskunalar",
+        "Foto va video kameralar",
+        "Foto va video kameralar uchun aksessuarlar"
+      ]
+    },
+    {
+      "name": "Budilniklar",
+      "items": [
+        "Elektron budilniklar",
+        "Aromabudilniklar va katrijlar",
+        "Radio budilniklar"
+      ]
+    },
+    {
+      "name": "Ofis texnikasi",
+      "items": [
+        "Ofis jihozla",
+        "Aksessuarlar"
+      ]
+    },
+    {
+      "name": "Aqlli uy va xavfsizlik",
+      "items": [
+        "Videokuzatuv",
+        "Aqlli uy",
+        "Uy xavfsizligi"
+      ]
+    },
+    {
+      "name": "O'yin pristavkalari",
+      "items": [
+        "O'yin pristavkalari",
+        "Portativ o'yin qurilmalari",
+        "Geympadlar",
+        "Zaryadlash uskunalari",
+        "Ehtiyot qismlar va aksessuarlar",
+        "Stikerlar"
+      ]
+    },
+    {
+      "name": "Televizorlar va videoteknikalar",
+      "items": [
+        "Televizorlar uchun uskunalar",
+        "Televizorlar",
+        "Tomosha aksessuarlari",
+        "Pleyerlar va musiqaga qo'yish uchun texnika",
+        "Proyektorlar va aksessuarlar"
+      ]
+    },
+    {
+      "name": "Optik anjomlar",
+      "items": [
+        "Mikroskoplar",
+        "Okulyarlar",
+        "Teleskoplar",
+        "Teatr binokllari",
+        "Mikroskoplar uchun aksessuarlar",
+        "Teleskop aksessuarlari"
+      ]
+    },
+    {
+      "name": "Elektronika uchun aksessuarlar",
+      "items": [
+        "Kabellar",
+        "Adapterlar va perexodniklar",
+        "Tashqi akkumulyatorlar",
+        "USB hablar",
+        "Akkumulyatorlar uchun zaryadlovchi qurilmalar",
+        "Simsiz zaryadlash qurilmalari",
+        "Tarmoq fitillari",
+        "Akkumulyator batareyalar",
+        "Uzatgichlar",
+        "Kabellar uchun tutqichlar",
+        "Kuchlanishni o'zgartirgichlar",
+        "Elektr tarmoqli o‘g‘irgichlar",
+        "Quyosh panellari va batareyalar"
+      ]
+    }
+  ]
+}

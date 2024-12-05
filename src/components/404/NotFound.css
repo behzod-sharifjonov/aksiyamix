@@ -1,0 +1,73 @@
+.not-found-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	position: relative;
+	background-color: #f9f9f9;
+	overflow: hidden;
+}
+
+.stars-background {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	height: auto;
+	z-index: 1;
+}
+
+.error-box {
+	text-align: center;
+	padding: 40px;
+	border-radius: 8px;
+	position: relative;
+	z-index: 1;
+}
+
+.error-code-container {
+	position: relative;
+	display: inline-block;
+}
+
+.not-found-image {
+	width: 200px;
+}
+
+.error-cloud {
+	position: absolute;
+	top: -30px;
+	/* Позиция облачка относительно текста 404 */
+	right: -40px;
+	width: 40px;
+}
+
+.error-message {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	margin-top: 10px;
+}
+
+.error-description {
+	font-size: 16px;
+	color: #666;
+	margin-top: 10px;
+}
+
+.home-button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: white;
+	background-color: #ff4b6e;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+	background-color: #e33e5d;
+}

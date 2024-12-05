@@ -1,6 +1,7 @@
 import React, { lazy, useEffect, useState } from 'react'
 import DetailText from './detailText/DetailText'
 import DetailTop from './detailTop/DetailTop'
+import './Detail.css'
 // import Header from '../../components/Header/Header'
 import iphone from '../../assets/images/iphone15pro.png'
 import blue from '../../assets/images/iphone15blue.png'
