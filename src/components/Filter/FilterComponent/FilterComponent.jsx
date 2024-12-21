@@ -41,7 +41,6 @@ const FilterComponent = () => {
 		});
 	};
 	const handleRangeChange = (values) => {
-		// Ensure a minimum interval between sliders
 		const [min, max] = values;
 		if (max - min >= MIN_INTERVAL) {
 			setPriceRange(values);

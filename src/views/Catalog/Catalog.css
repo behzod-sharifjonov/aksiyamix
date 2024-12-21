@@ -1,0 +1,88 @@
+.catalog {
+	display: flex;
+	font-family: Arial, sans-serif;
+	width: 100%;
+}
+
+.catalog-sidebar {
+	width: 250px;
+	border-right: 1px solid #ccc;
+	background-color: #f8f9fa;
+	padding: 10px;
+}
+
+.sidebar-item {
+	padding: 10px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: background-color 0.3s;
+}
+
+.sidebar-item:hover,
+.sidebar-item.active {
+	background-color: #e9ecef;
+}
+
+.sidebar-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.icon {
+	color: #475569;
+}
+
+.chevron-icon {
+	color: #888;
+}
+
+.catalog-content {
+	flex: 1;
+	padding: 20px;
+	background-color: #fff;
+}
+
+.subcategory-panel h2 {
+	font-size: 32px;
+	margin-bottom: 32px;
+	padding-bottom: 10px;
+}
+
+.subcategories {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+
+.subcategory {
+	width: 250px;
+}
+
+.subcategory h3 {
+	font-size: 16px;
+	margin-bottom: 24px;
+	font-weight: bold;
+}
+
+.subcategory ul {
+	list-style: none;
+	padding: 0;
+}
+
+.subcategory li {
+	margin-bottom: 5px;
+	cursor: pointer;
+	transition: color 0.3s;
+	font-weight: 500;
+	line-height: 24px;
+	font-size: 16px;
+	color: #64748B;
+	padding-bottom: 16px;
+}
+
+.subcategory li:hover {
+	color: #0056b3;
+}

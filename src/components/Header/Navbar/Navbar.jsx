@@ -1,14 +1,35 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import '../Header.css'
 import logo from '../../../assets/logo.png'
-import { IoMenu } from "react-icons/io5";
+import { IoClose, IoMenu } from "react-icons/io5";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoNotificationsOutline } from "react-icons/io5";
 import { GoHeart } from "react-icons/go";
 import { Context } from '../../../App';
 import AuthModal from '../../../views/Auth/AuthModal';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function Navbar() {
+    const location = useLocation();
+    const navigate = useNavigate();
+    const [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() => {
+        if (location.pathname === "/catalog") {
+            setIsOpen(true);
+        } else {
+            setIsOpen(false);
+        }
+    }, [location.pathname]);
+
+    const handleClick = () => {
+        if (isOpen) {
+            navigate("/");
+        } else {
+            navigate("/catalog");
+        }
+    };
+
 
     const { openModal, showModal, userName, closeModal } = useContext(Context);
 
@@ -21,8 +42,11 @@ function Navbar() {
                     </div>
                 </li>
                 <li className='catalog'>
-                    <button>
-                        <IoMenu className='menu' /><span>Каталог</span>
+                    <button className="catalog-btn" onClick={handleClick}>
+                        <div className="catalog-btn-link">
+                            {isOpen ? <IoClose className="menu" /> : <IoMenu className="menu" />}
+                            <span>Каталог</span>
+                        </div>
                     </button>
                 </li>
                 <li>
@@ -47,7 +71,7 @@ function Navbar() {
                     </div>
                 </li>
                 <li className='login-btn'>
-                    <button onClick={openModal} style={{cursor: 'pointer'}}>Login</button>
+                    <button onClick={openModal} style={{ cursor: 'pointer' }}>Login</button>
                     <AuthModal showModal={showModal} closeModal={closeModal} />
                 </li>
             </ul>

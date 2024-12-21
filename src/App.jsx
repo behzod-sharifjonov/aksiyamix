@@ -2,12 +2,13 @@ import { Route, Routes } from "react-router-dom"
 import Main from "./views/Main/Main"
 import Detail from "./views/Detail/Detail"
 import { createContext, useState } from "react";
-import MobileCategoryPage from "./container/Categories/MobileCategoryPage";
 import Header from "./components/Header/Header";
 import HeaderMenuMobile from "./components/Header/HeaderMenuMobile";
 import Login from "../src/views/Auth/Login"
 import AuthModal from "./views/Auth/AuthModal";
 import NotFound from "./components/404/NotFound";
+import Catalog from "./views/Catalog/Catalog";
+import Filter from "./components/Filter/Filter";
 
 export const Context = createContext()
 
@@ -29,8 +30,9 @@ function App() {
       <AuthModal />
       <Routes>
         <Route path="detail" element={<Detail />} />
+        <Route path="/catalog" element={<Catalog/>} />
 
-        <Route path="/categories" element={<MobileCategoryPage />} />
+        <Route path="/categories" element={<Filter/>} />
         <Route path="/best-ads" element={<h1>Лучшие объявления</h1>} />
         <Route path="/discounts-start" element={<h1>Объявления о начале скидки</h1>} />
         <Route path="/" element={<Main />} />

@@ -191,7 +191,7 @@ nav ul li {
     border-top: 1px solid #DBDBDB;
 }
 
-.header-mobile-menu .button-group{
+.header-mobile-menu .button-group {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -215,6 +215,17 @@ nav ul li {
     /* Border color for the active button */
 }
 
+.catalog-btn-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.catalog-btn {
+    background: linear-gradient(249.36deg, #F50951 3.2%, #FD3A7E 44.56%, #FF9B06 100%);
+}
+
 
 @media screen and (max-width:767px) {
     .header-bottom-menu {
@@ -236,7 +247,7 @@ nav ul li {
         display: none;
     }
 
-    .header-mobile-menu{
+    .header-mobile-menu {
         display: flex;
     }
 
