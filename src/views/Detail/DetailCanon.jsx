@@ -3,6 +3,7 @@ import canon from '../../assets/images/canon.png'
 import Macbro from '../../assets/images/MacBro.png'
 import { IoEyeOutline } from "react-icons/io5";
 import { IoLocationSharp } from "react-icons/io5";
+import { CiHeart } from "react-icons/ci";
 
 function DetailCanon() {
   return (
@@ -13,6 +14,17 @@ function DetailCanon() {
 
 <div className='canon-card'>
 
+<div className="canon-new">
+  <h1>
+  Топ
+  </h1>
+</div>
+
+<div className="canon-like-conteiner">
+
+<CiHeart className='canon-like' />
+
+</div>
 
       <img src={canon} className='canon' alt="" />
 
@@ -49,6 +61,17 @@ function DetailCanon() {
 </div>
 <div className='canon-card'>
 
+<div className="canon-new">
+  <h1>
+  Топ
+  </h1>
+</div>
+
+<div className="canon-like-conteiner">
+
+<CiHeart className='canon-like' />
+
+</div>
 
       <img src={canon} className='canon' alt="" />
 
@@ -85,6 +108,17 @@ function DetailCanon() {
 </div>
 <div className='canon-card'>
 
+<div className="canon-new">
+  <h1>
+  Топ
+  </h1>
+</div>
+
+<div className="canon-like-conteiner">
+
+<CiHeart className='canon-like' />
+
+</div>
 
       <img src={canon} className='canon' alt="" />
 
@@ -121,6 +155,17 @@ function DetailCanon() {
 </div>
 <div className='canon-card'>
 
+<div className="canon-new">
+  <h1>
+  Топ
+  </h1>
+</div>
+
+<div className="canon-like-conteiner">
+
+<CiHeart className='canon-like' />
+
+</div>
 
       <img src={canon} className='canon' alt="" />
 
@@ -159,6 +204,8 @@ function DetailCanon() {
 
 
 </div>
+
+
 
     </div>
   )
