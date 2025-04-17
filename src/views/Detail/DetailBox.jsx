@@ -23,11 +23,7 @@ function DetailBox() {
 
 <img src={img} alt="" />
 
-<<<<<<< HEAD
 {/* --------price-------------------- */}
-=======
-{/* -------------------price------------- */}
->>>>>>> 0a96ace7332c5154897d51c5e3a735e7e3fe5ea5
 <div className='detailBox-Price'>
 <h2>Apple iPhone 13 56 ГБ</h2>
             <div className='detailBox-digrate'>
