@@ -15,7 +15,7 @@ function DetailBox() {
 
 <img src={img} alt="" />
 
-{/* ------------------------price-------------------- */}
+{/* --------price-------------------- */}
 <div className='detailBox-Price'>
 <h2>Apple iPhone 13  256 ГБ</h2>
             <div className='detailBox-digrate'>
