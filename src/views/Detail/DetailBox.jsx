@@ -10,14 +10,22 @@ function DetailBox() {
 
       <div className="detail-box-conteiner">
 
+
+
+
+
+
+
+        
+
 <div className="detail-box-card">
 <div className='detail-box-card-left'>
 
 <img src={img} alt="" />
 
-{/* ------------------------price-------------------- */}
+{/* -------------------price------------- */}
 <div className='detailBox-Price'>
-<h2>Apple iPhone 13  256 ГБ</h2>
+<h2>Apple iPhone 13 56 ГБ</h2>
             <div className='detailBox-digrate'>
 
               <h1>
@@ -61,6 +69,41 @@ function DetailBox() {
 
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div className="detail-box-card">
 <div className='detail-box-card-left'>

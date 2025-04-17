@@ -15,6 +15,7 @@ import Otziv from './detailcomment/Otziv'
 import DetailMap from './DetailMap'
 import DetailBox from './DetailBox'
 import DetailCanon from './DetailCanon'
+import DetailSmiler from './DetailSmiler'
 
 
 function Detail() {
@@ -106,6 +107,7 @@ function Detail() {
 <DetailCanon/>
 
 </div>
+<DetailSmiler/>
     </div>
   )
 }

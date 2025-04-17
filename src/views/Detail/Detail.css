@@ -1,7 +1,15 @@
 .main-detailing {
-  position: relative;
+  /* position: relative; */
   padding: 30px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 100px;
 
+
+}
+img{
+  object-fit: cover;
 }
 
 .detailText {
@@ -547,7 +555,7 @@ h2 {
 
 .commit-conteiner {
   width: 708px;
-  /* height: 456px; */
+  height: 456px;
   padding: 20px;
 
   border: 1px solid grey;
@@ -857,72 +865,73 @@ button {
 }
 
 .canon {
-  width: 290px;
+  width: 280px;
   height: 200px;
   border-radius: 8px;
 
 }
-.macbro-canon{
+
+.macbro-canon {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
   max-width: 320px;
 }
-.macbro-canon-left{
+
+.macbro-canon-left {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.macbro-canon-left>h2{
+
+.macbro-canon-left>h1 {
   font-size: 14px;
   font-weight: 500;
   color: rgba(71, 85, 105, 1);
 }
-.macbro-canon-right{
-  display: flex;
-  align-items: center;
-  gap: 5px; 
-}
-.macbro-canon-right>h1{
-  font-size: 14px;
-  font-weight: 500;
-  color: rgba(71, 85, 105, 1);
-}
-.eye-canon{
+
+
+.eye-canon {
   width: 20px;
   height: 20px;
   color: rgba(71, 85, 105, 1);
 
 }
-.canon-text{
+
+.canon-text {
   font-size: 20px;
   font-weight: 600;
 }
-.canon-price{
+
+.canon-price {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 8px;
   margin-top: 12px;
 }
-.canon-price > h2{
-font-size: 14px;
-font-weight: 400;
-text-decoration: line-through;
-color: rgba(71, 85, 105, 1);
+
+.canon-price>h2 {
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: rgba(71, 85, 105, 1);
 }
-.canon-price > h1{
+
+.canon-price>h1 {
   font-size: 20px;
   font-weight: 700;
   color: rgba(255, 3, 76, 1);
 }
-.canon-location{
+
+.canon-location {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.canon-location-card{
+
+.canon-location-card {
   width: 86px;
   height: 28px;
   border-radius: 4px;
@@ -934,21 +943,197 @@ color: rgba(71, 85, 105, 1);
   gap: 3px;
 }
 
-.canon-location-card >h1{
+.canon-location-card>h1 {
   font-size: 14px;
   font-weight: 400;
   color: rgba(15, 23, 42, 1);
 }
-.canon-location-card:nth-child(2){
+
+.canon-location-card:nth-child(2) {
 
 
 
   width: 108px;
 }
 
-.conteiner-canon{
-display: grid;
-grid-template-columns: repeat(2,1fr);
-gap: 20px;
+.conteiner-canon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 
+}
+
+.canon-card {
+  position: relative;
+}
+
+.canon-new {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  left: 8px;
+  width: 40px;
+  height: 21px;
+  border-radius: 4px;
+  background-color: rgba(255, 3, 76, 1);
+}
+
+.canon-new>h1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+}
+
+.canon-like-conteiner {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: rgba(176, 176, 176, 0.46);
+}
+
+.canon-like {
+  width: 18px;
+  height: 18px;
+  color: rgba(255, 255, 255, 1);
+
+}
+/* -------------------------------------------smiler--------------------------------------------------- */
+.smiler-conteiner-canon{
+  /* width: 266px; */
+  /* height: 260px;/ */
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.smiler{
+  width: 306px;
+  height: 290px;
+  border-radius: 8px;
+}
+.smiler-card{
+  position: relative;
+  width: 306px;
+  height: 290px;
+}
+.smiler-new{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  left: 8px;
+  width: 40px;
+  height: 21px;
+  border-radius: 4px;
+  background-color: rgba(255, 3, 76, 1);
+}
+.smiler-new >h1{
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+}
+.smiler-price>h2 {
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: rgba(71, 85, 105, 1);
+}
+
+.smiler-like-conteiner{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: rgba(176, 176, 176, 0.46);
+}
+.smiler-like{
+  width: 18px;
+  height: 18px;
+  color: rgba(255, 255, 255, 1);
+}
+.macbro-smiler{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  max-width: 320px;
+}
+.macbro-smiler-left{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.macbro-smiler-left>h1 {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(71, 85, 105, 1);
+}
+.eye-smiler{
+  width: 20px;
+  height: 20px;
+  color: rgba(71, 85, 105, 1);
+}
+.smiler-text{
+  font-size: 20px;
+  font-weight: 600;
+}
+.smiler-price{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+}
+.smiler-price>h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(255, 3, 76, 1);
+}
+.smiler-location{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.smiler-location-card{
+  width: 86px;
+  height: 28px;
+  border-radius: 4px;
+  background-color: rgba(241, 245, 249, 1);
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  justify-content: center;
+  gap: 3px;
+}
+.smiler-location-card>h1 {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(15, 23, 42, 1);
+}
+.smiler-location-card:nth-child(2) {
+
+
+
+  width: 108px;
+}
+.smiler-box{
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  height: 700px;
+  gap: 20px;
+margin-bottom: 100px;
 }
